@@ -9,7 +9,7 @@ X_train = X_train / 255
 X_test = X_test / 255
 
 cnn = models.Sequential([
-    layers.Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(32, 32, 3)),
+    layers.Conv2D(filters=32, kernel_size=(3, 3), activation='relu', input_shape=(28, 28)),
     layers.MaxPooling2D((2, 2)),
     
     layers.Conv2D(filters=64, kernel_size=(3, 3), activation='relu'),
